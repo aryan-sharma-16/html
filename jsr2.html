@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> 
+        function square()
+        {
+            var a=document.getElementById("num").value;
+            a=parseInt(a);
+            // console.log(a);
+            var b=a*a;
+            // alert(b);
+            // document.getElementById("p1").innerHTML=b;
+            document.getElementById("p1").innerText=("The square is : "+b);
+
+        }
+    </script>
+</head>
+<body>
+    Enter a Nmber:
+    <input id="num" type="number">
+    <br><br>
+    <p id="p1"></p>
+    <button onclick="square()">Square</button>
+</body>
+</html>
